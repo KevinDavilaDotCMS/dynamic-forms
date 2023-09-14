@@ -1,4 +1,4 @@
-<ng-container *ngIf="formData$ | async as formData">
+<!-- <ng-container *ngIf="formData$ | async as formData">
   <ng-container *ngFor="let row of formData">
     <div class="row">
       <div
@@ -10,6 +10,10 @@
       </div>
     </div>
 
-    <!-- <dot-form [fieldset]="row.row.columns"></dot-form> -->
   </ng-container>
+</ng-container> -->
+<!-- <dot-form [fieldset]="row.row.columns"></dot-form> -->
+<ng-container *ngIf="formData$ | async as formData">
+  <dot-form [formData]="formData" ></dot-form>
+  <pre><code>{{formData | json}}</code></pre>
 </ng-container>

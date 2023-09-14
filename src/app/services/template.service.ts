@@ -1,8 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { of } from 'rxjs';
+import { of, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { FORM_RESPONSE } from '../constants/form.response';
+import { DotForm } from '../interfaces/dot-form.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,7 @@ import { FORM_RESPONSE } from '../constants/form.response';
 export class TemplateService {
   private readonly http = inject(HttpClient);
 
-  getFormData() {
+  getFormData(): Observable<DotForm[]> {
     return of({ data: FORM_RESPONSE }).pipe(
       // map(res => res.data),
       map(formOrignalData => {
@@ -24,23 +25,23 @@ export class TemplateService {
               required: field.required,
               regexCheck: field.regexCheck
             }))
-            return { fields };
+            return { id: column.columnDivider.id, fields };
           })
           // return columns;
-          return { row: { columns: columns } }
+          return { row: { id: row.divider.id, columns: columns } }
         })
-        return mappedData;
+        return mappedData as unknown as DotForm[];
       })
     )
   }
 
-  data = [
-    {
-      type: '',
-      hint: '',
-      label: '',
-      required: '',
-      regexCheck: ''
-    }
-  ]
+  // data = [
+  //   {
+  //     type: '',
+  //     hint: '',
+  //     label: '',
+  //     required: '',
+  //     regexCheck: ''
+  //   }
+  // ]
 }

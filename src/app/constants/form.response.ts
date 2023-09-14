@@ -1,6 +1,6 @@
-import { DotForm } from "../interfaces/form.interface";
+import { DotTemplate } from "../interfaces/template.interface";
 
-export const FORM_RESPONSE: DotForm[] = [
+export const FORM_RESPONSE: DotTemplate[] = [
   {
     row: {
       "divider": {
@@ -14,7 +14,7 @@ export const FORM_RESPONSE: DotForm[] = [
         "fixed": false,
         "forceIncludeInApi": false,
         "iDate": 1694626929000,
-        "id": "3212148e35f6cc0151e5a889d494a25f",
+        "id": "3212148e35f6cc0151e5a889d494a25E",
         "indexed": false,
         "listed": false,
         "modDate": 1694626939000,
@@ -134,7 +134,7 @@ export const FORM_RESPONSE: DotForm[] = [
     row: {
       "divider": {
         "clazz": "com.dotcms.contenttype.model.field.ImmutableRowField",
-        "contentTypeId": "40e0cb1b57b3b1b7ec34191e942316d5",
+        "contentTypeId": "40e0cb1b57b3b1b7ec34191e942316d7",
         "dataType": "SYSTEM",
         "fieldContentTypeProperties": [],
         "fieldType": "Row",
@@ -156,6 +156,56 @@ export const FORM_RESPONSE: DotForm[] = [
         "variable": "fields0"
       },
       "columns": [
+        {
+          "columnDivider": {
+            "clazz": "com.dotcms.contenttype.model.field.ImmutableColumnField",
+            "contentTypeId": "40e0cb1b57b3b1b7ec34191e942316d5",
+            "dataType": "SYSTEM",
+            "fieldContentTypeProperties": [],
+            "fieldType": "Column",
+            "fieldTypeLabel": "Column",
+            "fieldVariables": [],
+            "fixed": false,
+            "forceIncludeInApi": false,
+            "iDate": 1694626943000,
+            "id": "cde39fbc5e9c233dbead291ef3ae89ae",
+            "indexed": false,
+            "listed": false,
+            "modDate": 1694627027000,
+            "name": "fields-2",
+            "readOnly": false,
+            "required": false,
+            "searchable": false,
+            "sortOrder": 3,
+            "unique": false,
+            "variable": "fields2"
+          },
+          "fields": [
+            {
+              "clazz": "com.dotcms.contenttype.model.field.ImmutableHostFolderField",
+              "contentTypeId": "40e0cb1b57b3b1b7ec34191e942316d5",
+              "dataType": "SYSTEM",
+              "fieldType": "Host-Folder",
+              "fieldTypeLabel": "Site or Folder",
+              "fieldVariables": [],
+              "fixed": false,
+              "forceIncludeInApi": false,
+              "hint": "This is a hint or a helper text",
+              "iDate": 1694626998000,
+              "id": "b09d358d3e471db7ce9836d1954fcf34",
+              "indexed": true,
+              "listed": false,
+              "modDate": 1694627027000,
+              "name": "Host Selector",
+              "readOnly": false,
+              "required": false,
+              "searchable": false,
+              "sortOrder": 4,
+              "unique": false,
+              "variable": "hostSelector"
+            }
+          ]
+        },
         {
           "columnDivider": {
             "clazz": "com.dotcms.contenttype.model.field.ImmutableColumnField",
@@ -206,56 +256,7 @@ export const FORM_RESPONSE: DotForm[] = [
             }
           ]
         },
-        {
-          "columnDivider": {
-            "clazz": "com.dotcms.contenttype.model.field.ImmutableColumnField",
-            "contentTypeId": "40e0cb1b57b3b1b7ec34191e942316d5",
-            "dataType": "SYSTEM",
-            "fieldContentTypeProperties": [],
-            "fieldType": "Column",
-            "fieldTypeLabel": "Column",
-            "fieldVariables": [],
-            "fixed": false,
-            "forceIncludeInApi": false,
-            "iDate": 1694626943000,
-            "id": "cde39fbc5e9c233dbead291ef3ae89ae",
-            "indexed": false,
-            "listed": false,
-            "modDate": 1694627027000,
-            "name": "fields-2",
-            "readOnly": false,
-            "required": false,
-            "searchable": false,
-            "sortOrder": 3,
-            "unique": false,
-            "variable": "fields2"
-          },
-          "fields": [
-            {
-              "clazz": "com.dotcms.contenttype.model.field.ImmutableHostFolderField",
-              "contentTypeId": "40e0cb1b57b3b1b7ec34191e942316d5",
-              "dataType": "SYSTEM",
-              "fieldType": "Host-Folder",
-              "fieldTypeLabel": "Site or Folder",
-              "fieldVariables": [],
-              "fixed": false,
-              "forceIncludeInApi": false,
-              "hint": "This is a hint or a helper text",
-              "iDate": 1694626998000,
-              "id": "b09d358d3e471db7ce9836d1954fcf34",
-              "indexed": true,
-              "listed": false,
-              "modDate": 1694627027000,
-              "name": "Host Selector",
-              "readOnly": false,
-              "required": false,
-              "searchable": false,
-              "sortOrder": 4,
-              "unique": false,
-              "variable": "hostSelector"
-            }
-          ]
-        }
+
       ]
     }
   }

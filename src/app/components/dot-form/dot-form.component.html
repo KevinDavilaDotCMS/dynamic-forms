@@ -1,4 +1,3 @@
-<!-- <div class="row">
-  <div class="column" *ngFor="let item of fieldset; let i = index">{{ i }}</div>
-</div> -->
-
+<ng-container *ngIf="form" [formGroup]="form">
+  <dot-row *ngFor="let form of formData" [row]="form.row"></dot-row>
+</ng-container>

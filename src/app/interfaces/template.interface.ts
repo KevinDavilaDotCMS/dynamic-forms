@@ -1,4 +1,4 @@
-export interface DotForm {
+export interface DotTemplate {
   row: Row;
 }
 

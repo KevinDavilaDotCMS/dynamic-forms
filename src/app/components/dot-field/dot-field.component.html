@@ -1,1 +1,8 @@
-<p>dot-field works!</p>
+<!-- Hola soy uuun: -->
+<ng-container [ngSwitch]="field.type">
+  <ng-container *ngSwitchCase="'Text'">
+    <input type="text" pInputText />
+  </ng-container>
+  <ng-container *ngSwitchCase="'Host-Folder'">Host-Folder!!!!</ng-container>
+  <div *ngSwitchDefault>Ni idea</div>
+</ng-container>

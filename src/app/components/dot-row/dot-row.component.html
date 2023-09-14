@@ -1,1 +1,8 @@
-<p>dot-row works!</p>
+<div class="row" [formGroup]="rowForm">
+  <div class="column" *ngFor="let column of row.columns; let i = index">
+    <!-- {{ i }} -->
+    <dot-field *ngFor="let field of column.fields" [field]="field"></dot-field>
+  </div>
+</div>
+
+{{ rowForm.value | json }}

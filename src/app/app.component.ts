@@ -19,6 +19,7 @@ interface City {
 export class AppComponent {
 
   private readonly templateService = inject(TemplateService);
-  formData$ = this.templateService.getFormData().pipe(tap(console.log))
+  formData$ = this.templateService.getFormData()
+  // .pipe(tap(console.log))
 
 }
