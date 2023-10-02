@@ -1,3 +1,14 @@
 <ng-container *ngIf="form" [formGroup]="form">
-  <dot-row *ngFor="let form of formData" [row]="form.row"></dot-row>
+  <ng-container *ngFor="let form of formData">
+    <div class="row">
+      <div class="column" *ngFor="let column of form.row.columns">
+        <dot-field
+          *ngFor="let field of column.fields"
+          [field]="field"
+        ></dot-field>
+      </div>
+    </div>
+  </ng-container>
 </ng-container>
+
+<pre><code>{{form.value | json}}</code></pre>

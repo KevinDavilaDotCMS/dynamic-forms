@@ -35,6 +35,7 @@ interface Field {
   unique: boolean;
   variable: string;
   hint?: string;
+  url?: string
 }
 
 interface Divider {

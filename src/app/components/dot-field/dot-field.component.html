@@ -1,8 +1,14 @@
-<!-- Hola soy uuun: -->
 <ng-container [ngSwitch]="field.type">
   <ng-container *ngSwitchCase="'Text'">
-    <input type="text" pInputText />
+    <input type="text" pInputText [formControlName]="field.variable" />
   </ng-container>
-  <ng-container *ngSwitchCase="'Host-Folder'">Host-Folder!!!!</ng-container>
+  <ng-container *ngSwitchCase="'Host-Folder'">
+    <p-dropdown
+      [options]="options"
+      optionValue="identiter"
+      optionLabel="name"
+      [formControlName]="field.variable"
+    ></p-dropdown>
+  </ng-container>
   <div *ngSwitchDefault>Ni idea</div>
 </ng-container>

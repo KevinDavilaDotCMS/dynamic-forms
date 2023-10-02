@@ -62,7 +62,7 @@ export const FORM_RESPONSE: DotTemplate[] = [
               "fixed": false,
               "forceIncludeInApi": false,
               "iDate": 1694627027000,
-              "id": "fa0928f9948dffa0e7d961741aad737e",
+              "id": "fa0928f9948dffa0e7d961741aad7370",
               "indexed": true,
               "listed": true,
               "modDate": 1694627027000,
@@ -73,7 +73,7 @@ export const FORM_RESPONSE: DotTemplate[] = [
               "searchable": true,
               "sortOrder": 2,
               "unique": false,
-              "variable": "email"
+              "variable": "email1"
             }
           ]
         },
@@ -113,17 +113,18 @@ export const FORM_RESPONSE: DotTemplate[] = [
               "forceIncludeInApi": false,
               "hint": "This is a hint or a helper text",
               "iDate": 1694626998000,
-              "id": "b09d358d3e471db7ce9836d1954fcf34",
+              "id": "b09d358d3e471db7ce9836d1954fcf31",
               "indexed": true,
               "listed": false,
               "modDate": 1694627027000,
               "name": "Host Selector",
+              "url": '1',
               "readOnly": false,
               "required": false,
               "searchable": false,
               "sortOrder": 4,
               "unique": false,
-              "variable": "hostSelector"
+              "variable": "hostSelector1"
             }
           ]
         }
@@ -192,17 +193,19 @@ export const FORM_RESPONSE: DotTemplate[] = [
               "forceIncludeInApi": false,
               "hint": "This is a hint or a helper text",
               "iDate": 1694626998000,
-              "id": "b09d358d3e471db7ce9836d1954fcf34",
+              "id": "b09d358d3e471db7ce9836d1954fcf32",
               "indexed": true,
               "listed": false,
               "modDate": 1694627027000,
               "name": "Host Selector",
+              "url": '2',
+
               "readOnly": false,
               "required": false,
               "searchable": false,
               "sortOrder": 4,
               "unique": false,
-              "variable": "hostSelector"
+              "variable": "hostSelector2"
             }
           ]
         },
@@ -241,7 +244,7 @@ export const FORM_RESPONSE: DotTemplate[] = [
               "fixed": false,
               "forceIncludeInApi": false,
               "iDate": 1694627027000,
-              "id": "fa0928f9948dffa0e7d961741aad737e",
+              "id": "fa0928f9948dffa0e7d961741aad7373",
               "indexed": true,
               "listed": true,
               "modDate": 1694627027000,
@@ -252,7 +255,7 @@ export const FORM_RESPONSE: DotTemplate[] = [
               "searchable": true,
               "sortOrder": 2,
               "unique": false,
-              "variable": "email"
+              "variable": "email2"
             }
           ]
         },

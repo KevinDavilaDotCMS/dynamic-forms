@@ -13,9 +13,12 @@ interface Column {
 }
 
 export interface DotField {
+  id: string;
   type: string;
   label: string;
   required: boolean;
   regexCheck?: string;
   hint?: string;
+  url?: string;
+  variable: string;
 }
